@@ -48,3 +48,4 @@ const arrayLibriTest = [
   new libro('dsfs', 'gbvcx'),
 ];
 const archivioTest = new archivio(arrayLibriTest);
+console.log(archivioTest.trovaLibro('os'));
