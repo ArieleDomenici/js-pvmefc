@@ -15,6 +15,14 @@ console.log(contains);
 //esercizio a partire dal codice realizzato nell'esercizio precedente realizzate una classe archivio contenente un metodo che restituisce un array di libri che corrispondono ad una certa stringa
 //l'array in cui eseguire la ricerca è caricato in una variabile nella stessa classe tramite il costruttore
 //il singolo libro può essere a sua volte rappresentato da una classe Libro con i quattro attributi necessari, specificati nella consegna del progetto
+
+class libro {
+  constructor(titolo, autore, att3, att4) {
+    this.titolo = titolo;
+    this.autore = autore;
+  }
+}
+
 class archivio {
   constructor(libri) {
     this.libri = libri;
@@ -32,3 +40,11 @@ class archivio {
     return libriMatch;
   }
 }
+
+const arrayLibriTest = [
+  new libro('wrer', 'treas'),
+  new libro('ghf', 'ncx'),
+  new libro('posds', 'tgfcx'),
+  new libro('dsfs', 'gbvcx'),
+];
+const archivioTest = new archivio(arrayLibriTest);
